@@ -38,13 +38,10 @@
                                                       VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
-                        </Setter.Value>    
+                        </Setter.Value>
                     </Setter>
                 </Trigger>
             </Style.Triggers>
-            
-            
-            
         </Style>
 
         <Style x:Key="borderPage"
