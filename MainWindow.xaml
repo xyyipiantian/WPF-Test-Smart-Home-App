@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:WpfApp1.UserControls"
     Name="window"
     Width="1080"
     Height="720"
@@ -131,10 +132,38 @@
                                     <RowDefinition Height="*" />
                                 </Grid.RowDefinitions>
                                 <!--  Cards  -->
+
+                                <uc:Card
+                                    Title="Refridgerator"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="0,0,8,8"
+                                    ImageOff="/Images/fridge_off.png"
+                                    ImageOn="/Images/fridge_on.png" />
+                                <uc:Card
+                                    Title="Temprature"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Margin="8,0,0,8"
+                                    ImageOff="/Images/electric_off.png"
+                                    ImageOn="/Images/electric_on.png"
+                                    IsChecked="True" />
+                                <uc:Card
+                                    Title="Air Conditioner"
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Margin="0,8,8,0"
+                                    ImageOff="/Images/cordinator_off.png"
+                                    ImageOn="/Images/cordinator_on.png" />
+                                <uc:Card
+                                    Title="Lights"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="8,8,0,0"
+                                    ImageOff="/Images/light_off.png"
+                                    ImageOn="/Images/light_on.png" />
                             </Grid>
                         </StackPanel>
-
-
 
                     </Grid>
                 </Border>

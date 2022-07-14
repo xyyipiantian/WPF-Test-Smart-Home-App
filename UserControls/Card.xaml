@@ -97,7 +97,11 @@
                 1.选中：Source 使用 card.ImageOn的值
                 2.未选中： Source 使用 card.ImageOff的值
             -->
-            <Image HorizontalAlignment="Left">
+            <Image
+                Width="40"
+                Height="40"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center">
                 <Image.Style>
                     <Style TargetType="Image">
                         <Style.Triggers>
