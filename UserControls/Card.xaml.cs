@@ -37,26 +37,26 @@ namespace WpfApp1.UserControls
             get { return (bool)GetValue(IsCheckedProperty); }
             set { SetValue(IsCheckedProperty, value); }
         }
-        public static readonly DependencyProperty IsCheckedProperty = DependencyProperty.Register("IsChecked", typeof(string), typeof(Card));
+        public static readonly DependencyProperty IsCheckedProperty = DependencyProperty.Register("IsChecked", typeof(bool), typeof(Card));
 
         public bool IsHorizontal
         {
             get { return (bool)GetValue(IsHorizontalProperty); }
             set { SetValue(IsHorizontalProperty, value); }
         }
-        public static readonly DependencyProperty IsHorizontalProperty = DependencyProperty.Register("IsHorizontal", typeof(string), typeof(Card));
+        public static readonly DependencyProperty IsHorizontalProperty = DependencyProperty.Register("IsHorizontal", typeof(bool), typeof(Card));
         public ImageSource ImageOn
         {
             get { return (ImageSource)GetValue(ImageOnProperty); }
             set { SetValue(ImageOnProperty, value); }
         }
-        public static readonly DependencyProperty ImageOnProperty = DependencyProperty.Register("ImageOn", typeof(string), typeof(Card));
+        public static readonly DependencyProperty ImageOnProperty = DependencyProperty.Register("ImageOn", typeof(ImageSource), typeof(Card));
         public ImageSource ImageOff
         {
             get { return (ImageSource)GetValue(ImageOffProperty); }
             set { SetValue(ImageOffProperty, value); }
         }
-        public static readonly DependencyProperty ImageOffProperty = DependencyProperty.Register("ImageOff", typeof(string), typeof(Card));
+        public static readonly DependencyProperty ImageOffProperty = DependencyProperty.Register("ImageOff", typeof(ImageSource), typeof(Card));
 
 
     }
