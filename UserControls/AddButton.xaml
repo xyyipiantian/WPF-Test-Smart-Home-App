@@ -3,7 +3,22 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Name="addButton">
-    <Button Width="300">
-        Addbutton
+    <Button
+        Width="300"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Style="{StaticResource addButton}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center" Text="{Binding ElementName=addButton, Path=Caption}" />
+            <Border
+                Width="37"
+                Margin="20,0,0,0"
+                Padding="10"
+                Background="#3253F1"
+                CornerRadius="50">
+                <Image Source="../Images/add.png" />
+            </Border>
+
+        </StackPanel>
     </Button>
 </UserControl>

@@ -24,5 +24,13 @@ namespace WpfApp1.UserControls
         {
             InitializeComponent();
         }
+        public string Caption
+        {
+            get { return (string)GetValue(CaptionProperty); }
+            set { SetValue(CaptionProperty, value); }
+        }
+        public static readonly DependencyProperty CaptionProperty = DependencyProperty.Register("Caption", typeof(string), typeof(AddButton));
+
+
     }
 }

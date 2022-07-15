@@ -163,6 +163,13 @@
                                     ImageOff="/Images/light_off.png"
                                     ImageOn="/Images/light_on.png" />
                             </Grid>
+
+                            <!--  addButton  -->
+                            <uc:AddButton
+                                Grid.Column="1"
+                                Margin="0,50,0,0"
+                                HorizontalAlignment="Center"
+                                Caption="Add Button" />
                         </StackPanel>
 
                     </Grid>
